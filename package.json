@@ -1,0 +1,48 @@
+{
+  "name": "f1-library",
+  "version": "1.0.0",
+  "description": "A javascript project to get the information about drivers, teams and standings of formula 1 🏎",
+  "author": "Imanol Rodríguez de Maya <imrodriguez>",
+  "repository": "https://github.com/imrodriguez/f1-js-lib",
+  "license": "MIT",
+  "keywords": [
+    "f1",
+    "api",
+    "lib",
+    "formula1",
+    "formula 1",
+    "drivers",
+    "cars",
+    "teams"
+  ],
+  "main": "./dist/tsc/index.js",
+  "types": "./dist/tsc/index.d.ts",
+  "scripts": {
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "test": "jest --watch --verbose false",
+    "clean": "rm -rf dist build package",
+    "ts-node": "ts-node",
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.21",
+    "@types/node": "^15.0.1",
+    "@types/puppeteer": "^5.4.4",
+    "@types/uuid": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "esbuild": "^0.11.11",
+    "eslint": "^7.22.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "ts-node": "^9.1.1",
+    "typedoc": "^0.20.35",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "node-fetch": "^3.0.0",
+    "puppeteer": "^10.4.0",
+    "tslib": "^2.3.1",
+    "uuid": "^8.3.2"
+  }
+}
